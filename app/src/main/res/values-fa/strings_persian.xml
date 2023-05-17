@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">برنامه مترجم</string>
+    <string name="setting">تنظیمات</string>
+    <string name="en_language">انگلیسی</string>
+    <string name="pr_language">فارسی</string>
+    <string name="fr_language">فرانسوی</string>
+    <string name="ar_language">عربی</string>
+    <string name="search">سرچ</string>
+    <string name="create_word">ساخت کلمه</string>
+    <string name="cancel">منصرف شدن</string>
+    <string name="add_word">اضافه کردن کلمه</string>
+    <string name="edit">تغییر</string>
+    <string name="delete">پاک کردن</string>
+    <string name="shear">اشتراک گذاری</string>
+</resources>

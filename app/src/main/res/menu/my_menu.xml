@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionMainSearch"
+        android:icon="@drawable/icon_search"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item android:title="@string/language">
+        <menu>
+            <item
+                android:id="@+id/action_en_language"
+                android:title="@string/en_menu_language" />
+            <item
+                android:id="@+id/action_pr_language"
+                android:title="@string/pr_menu_language" />
+            <item
+                android:id="@+id/action_fr_language"
+                android:title="@string/fr_menu_language" />
+            <item
+                android:id="@+id/action_ar_language"
+                android:title="@string/ar_menu_language" />
+        </menu>
+    </item>
+    <item android:title="@string/setting">
+        <menu>
+            <item
+                android:id="@+id/action_en_language_app"
+                android:title="@string/en_menu_language" />
+            <item
+                android:id="@+id/action_pr_language_app"
+                android:title="@string/pr_menu_language" />
+        </menu>
+    </item>
+
+
+</menu>

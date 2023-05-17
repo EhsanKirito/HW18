@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dictionary App</string>
+    <string name="setting">Setting</string>
+    <string name="en_language">English</string>
+    <string name="pr_language">Persian</string>
+    <string name="fr_language">French</string>
+    <string name="ar_language">Arabic</string>
+    <string name="create_word">Create Word</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="add_word">add word</string>
+    <string name="shear">Shear</string>
+</resources>

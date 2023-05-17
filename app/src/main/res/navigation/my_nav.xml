@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.dictionaryapp.ui.features.main.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_editBottomSheetDialog"
+            app:destination="@id/editBottomSheetDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/editBottomSheetDialog"
+        android:name="com.example.dictionaryapp.ui.features.dialogs.EditBottomSheetDialog"
+        android:label="EditBottomSheetDialog" >
+        <action
+            android:id="@+id/action_editBottomSheetDialog_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="word_id"
+            app:argType="integer" />
+    </dialog>
+</navigation>

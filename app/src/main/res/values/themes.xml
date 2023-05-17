@@ -1,0 +1,6 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DictionaryApp" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="Theme.DictionaryApp" parent="Base.Theme.DictionaryApp" />
+</resources>
