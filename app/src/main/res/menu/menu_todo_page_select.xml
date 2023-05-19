@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionDelete"
+        android:title="delete" />
+    <item
+        android:id="@+id/actionMove"
+        android:title="move" />
+    <item
+        android:id="@+id/actionSelectAll"
+        android:title="select All" />
+    <item
+        android:id="@+id/actionUnSelectAll"
+        android:title="unSelectAll" />
+</menu>

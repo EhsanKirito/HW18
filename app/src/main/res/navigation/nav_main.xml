@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/taskManagerFragment">
+    <fragment
+        android:id="@+id/taskManagerFragment"
+        android:name="com.example.todo.ui.todo_page.TaskManagerFragment"
+        android:label="fragment_task_manager"
+        tools:layout="@layout/fragment_task_manager" >
+        <action
+            android:id="@+id/action_taskManagerFragment_to_editDialogFragment"
+            app:destination="@id/editDialogFragment" />
+        <action
+            android:id="@+id/action_taskManagerFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/editDialogFragment"
+        android:name="com.example.todo.ui.todo_page.dialog.EditDialogFragment"
+        android:label="EditDialogFragment" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </dialog>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.todo.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

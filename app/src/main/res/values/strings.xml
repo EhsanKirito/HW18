@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TODO</string>
+    <string name="tasks_names">tasks Names</string>
+    <string name="tasks_numbers">tasks Numbers</string>
+    <string name="submit">submit</string>
+    <string name="hello_blank_fragment">hello blank fragment</string>
+    <string name="todo">ToDo</string>
+    <string name="doing">Doing</string>
+    <string name="done">Done</string>
+    <string name="description_fab">Add task</string>
+</resources>

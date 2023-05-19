@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="taskEnum"
+            type="com.example.todo.ui.todo_page.enums.TaskState" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#7FA1E3"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="30dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="16dp"
+        app:contentPaddingBottom="24dp"
+        app:contentPaddingEnd="16dp"
+        app:contentPaddingLeft="16dp"
+        app:contentPaddingRight="16dp"
+        app:contentPaddingStart="16dp"
+        app:contentPaddingTop="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+
+            <EditText
+                android:id="@+id/et_titleTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_descriptionTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Description"
+
+                android:inputType="textPersonName"
+                android:textColorHint="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_datePiker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="Set Date"
+                android:textColor="@color/black"
+                android:textColorHint="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_timePiker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="Set Time"
+                android:textColor="@color/black"
+                android:textColorHint="#000000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_groups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_Todo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="@{taskEnum.TODO}"
+                    android:text="Todo"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <RadioButton
+                    android:id="@+id/radio_Doing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="@{taskEnum.DOING}"
+                    android:text="Doing"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <RadioButton
+                    android:id="@+id/radio_Done"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="@{taskEnum.DONE}"
+                    android:text="Done"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_editeTask"
+                    style="@style/RoundedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Edit"
+                    android:textSize="14sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/btn_deleteTask"
+                    style="@style/RoundedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Delete"
+                    android:textSize="14sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/btn_cancelTask"
+                    style="@style/RoundedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Cancel"
+                    android:textSize="14sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
